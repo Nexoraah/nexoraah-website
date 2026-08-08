@@ -1,0 +1,569 @@
+/* ==========================================================
+   NEXORAAH WEBSITE
+   Version 0.5
+========================================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:#020816;
+
+    color:#ffffff;
+
+    font-family:'Inter',sans-serif;
+
+    line-height:1.7;
+
+    overflow-x:hidden;
+
+}
+
+/* ==========================================================
+   CONTAINER
+========================================================== */
+
+.container{
+
+    width:90%;
+
+    max-width:1400px;
+
+    margin:auto;
+
+}
+
+/* ==========================================================
+   LINKS
+========================================================== */
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+/* ==========================================================
+   BRAND COLOURS
+========================================================== */
+
+:root{
+
+--navy:#020816;
+
+--blue:#0B4FD9;
+
+--teal:#14D7D7;
+
+--green:#22C55E;
+
+--white:#FFFFFF;
+
+--light:#D9E7FF;
+
+}
+
+/* ==========================================================
+   NAVIGATION
+========================================================== */
+
+.navbar{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+z-index:999;
+
+background:rgba(2,8,22,.75);
+
+backdrop-filter:blur(18px);
+
+border-bottom:1px solid rgba(20,215,215,.15);
+
+}
+
+.nav-wrapper{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:22px 0;
+
+}
+
+.brand img{
+
+height:56px;
+
+display:block;
+
+}
+
+nav ul{
+
+display:flex;
+
+list-style:none;
+
+gap:50px;
+
+}
+
+nav a{
+
+font-size:17px;
+
+font-weight:500;
+
+transition:.3s;
+
+}
+
+nav a:hover{
+
+color:var(--teal);
+
+}
+
+.contact-btn{
+
+padding:14px 28px;
+
+border:1px solid rgba(20,215,215,.5);
+
+border-radius:14px;
+
+display:flex;
+
+align-items:center;
+
+gap:12px;
+
+transition:.3s;
+
+}
+
+.contact-btn:hover{
+
+background:rgba(20,215,215,.08);
+
+transform:translateY(-2px);
+
+}
+
+.contact-btn span{
+
+font-size:20px;
+
+}
+
+/* ==========================================================
+   HERO
+========================================================== */
+
+.hero{
+
+position:relative;
+
+min-height:100vh;
+
+display:flex;
+
+align-items:center;
+
+padding-top:120px;
+
+overflow:hidden;
+
+}
+
+.hero-background{
+
+position:absolute;
+
+inset:0;
+
+z-index:0;
+
+}
+
+.world-map{
+
+position:absolute;
+
+top:60px;
+
+right:0;
+
+width:60%;
+
+opacity:.12;
+
+}
+
+.earth-horizon{
+
+position:absolute;
+
+bottom:0;
+
+left:0;
+
+width:100%;
+
+}
+
+.hero-grid{
+
+position:relative;
+
+z-index:5;
+
+display:grid;
+
+grid-template-columns:1.1fr 1fr;
+
+align-items:center;
+
+gap:80px;
+
+}
+/* ==========================================================
+   HERO CONTENT
+========================================================== */
+
+.hero-left{
+    max-width:720px;
+}
+
+.hero-left h1{
+    font-family:'Playfair Display',serif;
+    font-size:clamp(48px,5vw,76px);
+    line-height:1.08;
+    font-weight:600;
+    letter-spacing:-1.5px;
+    margin-bottom:24px;
+}
+
+.hero-left h1 span{
+    display:block;
+    background:linear-gradient(
+        90deg,
+        #2FA9FF 0%,
+        #20D6D0 45%,
+        #63D65A 100%
+    );
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+}
+
+.hero-line{
+    width:92px;
+    height:3px;
+    background:linear-gradient(
+        90deg,
+        #20D6D0,
+        #63D65A
+    );
+    margin:26px 0;
+}
+
+.hero-tagline{
+    font-size:25px;
+    font-weight:500;
+    color:#20D6D0;
+    margin-bottom:22px;
+}
+
+.hero-description{
+    max-width:650px;
+    font-size:19px;
+    line-height:1.75;
+    color:#E4ECF7;
+    margin-bottom:38px;
+}
+
+/* ==========================================================
+   HERO BUTTONS
+========================================================== */
+
+.hero-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.btn-primary,
+.btn-secondary{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+    min-height:62px;
+    padding:0 28px;
+    border-radius:9px;
+    font-size:17px;
+    font-weight:500;
+    transition:all .3s ease;
+}
+
+.btn-primary{
+    background:linear-gradient(
+        100deg,
+        #087CC8,
+        #159F9C,
+        #3EAD67
+    );
+    color:#ffffff;
+    border:1px solid transparent;
+}
+
+.btn-primary:hover{
+    transform:translateY(-3px);
+    box-shadow:0 12px 35px rgba(20,215,215,.2);
+}
+
+.btn-secondary{
+    border:1px solid rgba(32,214,208,.65);
+    color:#ffffff;
+    background:rgba(2,8,22,.35);
+}
+
+.btn-secondary:hover{
+    transform:translateY(-3px);
+    background:rgba(20,215,215,.08);
+    border-color:#63D65A;
+}
+
+/* ==========================================================
+   HERO LOGO
+========================================================== */
+
+.hero-right{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:520px;
+}
+
+.hero-logo{
+    width:min(100%,620px);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero-logo img{
+    width:100%;
+    max-width:620px;
+    height:auto;
+    display:block;
+    object-fit:contain;
+}
+
+/* ==========================================================
+   HERO HIGHLIGHTS
+========================================================== */
+
+.hero-highlights{
+    position:relative;
+    z-index:10;
+    border-top:1px solid rgba(32,214,208,.18);
+    background:rgba(2,8,22,.72);
+    padding:30px 0 34px;
+}
+
+.highlights-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+}
+
+.highlight-item{
+    min-height:95px;
+    padding:0 24px;
+    display:flex;
+    align-items:center;
+    gap:16px;
+    border-right:1px solid rgba(32,214,208,.22);
+}
+
+.highlight-item:first-child{
+    padding-left:0;
+}
+
+.highlight-item:last-child{
+    border-right:none;
+}
+
+.highlight-icon{
+    flex:0 0 48px;
+    width:48px;
+    height:48px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.highlight-icon img{
+    width:44px;
+    height:44px;
+    object-fit:contain;
+}
+
+.highlight-item h3{
+    font-size:16px;
+    font-weight:600;
+    margin-bottom:5px;
+    color:#ffffff;
+}
+
+.highlight-item p{
+    font-size:13px;
+    line-height:1.5;
+    color:#B9C7D9;
+}
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media(max-width:1100px){
+
+    nav ul{
+        gap:25px;
+    }
+
+    .hero-grid{
+        grid-template-columns:1fr 1fr;
+        gap:35px;
+    }
+
+    .hero-left h1{
+        font-size:52px;
+    }
+
+    .highlights-grid{
+        grid-template-columns:repeat(3,1fr);
+        row-gap:25px;
+    }
+
+    .highlight-item:nth-child(3){
+        border-right:none;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .nav-wrapper{
+        padding:16px 0;
+    }
+
+    .brand img{
+        height:42px;
+    }
+
+    nav{
+        display:none;
+    }
+
+    .contact-btn{
+        padding:10px 16px;
+        font-size:14px;
+    }
+
+    .hero{
+        min-height:auto;
+        padding-top:110px;
+        padding-bottom:40px;
+    }
+
+    .hero-grid{
+        grid-template-columns:1fr;
+        gap:30px;
+    }
+
+    .hero-left{
+        max-width:none;
+    }
+
+    .hero-left h1{
+        font-size:44px;
+    }
+
+    .hero-tagline{
+        font-size:20px;
+    }
+
+    .hero-description{
+        font-size:17px;
+    }
+
+    .hero-right{
+        min-height:auto;
+    }
+
+    .hero-logo{
+        max-width:500px;
+    }
+
+    .highlights-grid{
+        grid-template-columns:1fr;
+    }
+
+    .highlight-item,
+    .highlight-item:first-child{
+        padding:15px 0;
+        border-right:none;
+        border-bottom:1px solid rgba(32,214,208,.18);
+    }
+
+    .highlight-item:last-child{
+        border-bottom:none;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .container{
+        width:88%;
+    }
+
+    .contact-btn span{
+        display:none;
+    }
+
+    .hero-left h1{
+        font-size:38px;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+    }
+
+    .btn-primary,
+    .btn-secondary{
+        width:100%;
+    }
+
+  }
