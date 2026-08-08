@@ -109,11 +109,22 @@ padding:22px 0;
 
 }
 
-.brand img{
-
-height:56px;
-
-display:block;
+.brand{
+    font-family:'Playfair Display',serif;
+    font-size:32px;
+    font-weight:600;
+    letter-spacing:8px;
+    background:linear-gradient(
+        90deg,
+        #1686D8,
+        #20D6D0,
+        #63D65A
+    );
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+    white-space:nowrap;
+}
 
 }
 
@@ -478,8 +489,9 @@ gap:80px;
         padding:16px 0;
     }
 
-    .brand img{
-        height:42px;
+    .brand{
+    font-size:22px;
+    letter-spacing:5px;
     }
 
     nav{
