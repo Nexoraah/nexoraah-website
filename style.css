@@ -613,6 +613,7 @@ gap:80px;
 
 .hero > *{
     position:relative;
+   
     z-index:2;
 }
 
@@ -621,4 +622,47 @@ gap:80px;
     .hero::before{
         display:none;
     }
+}
+
+/* ==========================================================
+   HIGHLIGHT ICONS
+========================================================== */
+
+.highlight-icon{
+    width:48px;
+    height:48px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-shrink:0;
+}
+
+.highlight-icon svg{
+    width:42px;
+    height:42px;
+    fill:none;
+    stroke:#20D6D0;
+    stroke-width:1.5;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+}
+
+.highlight-item:nth-child(1) .highlight-icon svg{
+    stroke:#1686D8;
+}
+
+.highlight-item:nth-child(2) .highlight-icon svg{
+    stroke:#20D6D0;
+}
+
+.highlight-item:nth-child(3) .highlight-icon svg{
+    stroke:#3CCFA0;
+}
+
+.highlight-item:nth-child(4) .highlight-icon svg{
+    stroke:#63D65A;
+}
+
+.highlight-item:nth-child(5) .highlight-icon svg{
+    stroke:#20D6D0;
 }
