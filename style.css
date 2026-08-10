@@ -276,6 +276,14 @@ gap:80px;
 
 .hero-left h1 span{
     display:block;
+}
+
+.hero-left h1 .headline-top{
+    color:#ffffff;
+    white-space:nowrap;
+}
+
+.hero-left h1 span:not(.headline-top){
     background:linear-gradient(
         90deg,
         #2FA9FF 0%,
