@@ -666,3 +666,44 @@ gap:80px;
 .highlight-item:nth-child(5) .highlight-icon svg{
     stroke:#20D6D0;
 }
+/* ================================
+   ABOUT US
+================================ */
+
+.about-section{
+    padding:100px 0;
+    border-top:1px solid rgba(45,220,220,.12);
+}
+
+.about-content{
+    max-width:900px;
+    margin:0 auto;
+}
+
+.about-label{
+    color:#20D6D0;
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:2px;
+    margin-bottom:18px;
+}
+
+.about-content h2{
+    font-size:48px;
+    line-height:1.15;
+    margin:0 0 28px;
+    color:#ffffff;
+}
+
+.about-content p{
+    font-size:20px;
+    line-height:1.7;
+    color:#b8c3d6;
+    margin:0 0 22px;
+}
+
+.about-closing{
+    color:#ffffff !important;
+    font-weight:600;
+    margin-top:35px !important;
+}
