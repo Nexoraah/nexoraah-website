@@ -773,4 +773,13 @@ gap:80px;
     margin-bottom:0;
     color:#ffffff;
     font-weight:600;
+
+}
+@media(max-width:480px){
+
+    .perspective-grid{
+        grid-template-columns:1fr;
+        gap:50px;
+    }
+
 }
