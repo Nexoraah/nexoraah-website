@@ -707,3 +707,54 @@ gap:80px;
     font-weight:600;
     margin-top:35px !important;
 }
+/* =================================
+   OUR PERSPECTIVE
+   ================================= */
+
+.perspective-section{
+    padding:100px 0;
+    border-top:1px solid rgba(45,220,220,.12);
+}
+
+.perspective-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:80px;
+    align-items:center;
+}
+
+.perspective-label{
+    color:#20D6D0;
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:2px;
+    margin-bottom:18px;
+}
+
+.perspective-statement h2{
+    font-size:48px;
+    line-height:1.15;
+    margin:0;
+    color:#ffffff;
+}
+
+.perspective-highlight{
+    margin-top:24px;
+    font-size:24px;
+    line-height:1.4;
+    color:#20D6D0;
+    font-weight:600;
+}
+
+.perspective-content p{
+    font-size:20px;
+    line-height:1.7;
+    color:#b8c2d6;
+    margin:0 0 24px;
+}
+
+.perspective-content p:last-child{
+    margin-bottom:0;
+    color:#ffffff;
+    font-weight:600;
+}
