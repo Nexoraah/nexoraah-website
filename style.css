@@ -381,6 +381,8 @@ gap:80px;
     align-items:center;
     justify-content:center;
     min-height:520px;
+    position:relative;
+    z-index:6;
 }
 
 .hero-logo{
@@ -397,6 +399,7 @@ gap:80px;
     display:block;
     object-fit:contain;
 }
+
 
 /* ==========================================================
    HERO HIGHLIGHTS
