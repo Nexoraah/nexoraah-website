@@ -586,7 +586,23 @@ gap:80px;
 
     .btn-primary,
     .btn-secondary{
-        width:100%;
+        width:100%;}
+    .perspective-grid{
+    grid-template-columns:1fr;
+    gap:50px;
+}
+
+.perspective-statement h2{
+    font-size:38px;
+}
+
+.perspective-highlight{
+    font-size:22px;
+}
+
+.perspective-content p{
+    font-size:18px;
+}
     }
 
   }/* ==========================================================
