@@ -580,6 +580,7 @@ gap:80px;
     }
 
     .hero-buttons{
+      
         flex-direction:column;
     }
 
@@ -588,4 +589,36 @@ gap:80px;
         width:100%;
     }
 
-  }
+  }/* ==========================================================
+   HERO BACKGROUND
+========================================================== */
+
+.hero{
+    position:relative;
+    overflow:hidden;
+}
+
+.hero::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background-image:url("assets/hero-background.png");
+    background-size:cover;
+    background-position:center bottom;
+    background-repeat:no-repeat;
+    opacity:.55;
+    z-index:0;
+    pointer-events:none;
+}
+
+.hero > *{
+    position:relative;
+    z-index:2;
+}
+
+/* Keep the mobile hero clean */
+@media (max-width:899px){
+    .hero::before{
+        display:none;
+    }
+}
