@@ -987,6 +987,67 @@ gap:80px;
     font-size:14px;
     color:#6f8795;
 }
+/* ==============================
+   IMPACT
+   ============================== */
+
+.impact-section{
+    padding:100px 0;
+    border-top:1px solid rgba(45,220,220,.12);
+}
+
+.impact-intro{
+    max-width:900px;
+    margin-bottom:50px;
+}
+
+.impact-label{
+    color:#20d6d0;
+    font-size:14px;
+    font-weight:700;
+    letter-spacing:2px;
+    margin-bottom:14px;
+}
+
+.impact-intro h2{
+    font-size:38px;
+    line-height:1.15;
+    color:#ffffff;
+    margin:0 0 22px;
+}
+
+.impact-intro p{
+    font-size:18px;
+    line-height:1.7;
+    color:#b8c3d6;
+    margin:0;
+}
+
+.impact-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:18px;
+}
+
+.impact-item{
+    padding:24px;
+    border:1px solid rgba(45,220,220,.12);
+    background:rgba(255,255,255,.02);
+}
+
+.impact-item h3{
+    font-size:22px;
+    line-height:1.2;
+    color:#ffffff;
+    margin:0 0 12px;
+}
+
+.impact-item p{
+    font-size:17px;
+    line-height:1.6;
+    color:#b8c3d6;
+    margin:0;
+}
 
 @media (max-width:480px){
 
@@ -1092,4 +1153,37 @@ gap:80px;
 
 .contact-content p{
     font-size:18px;
+  .impact-section{
+    padding:70px 0;
+}
+
+.impact-intro{
+    margin-bottom:32px;
+}
+
+.impact-intro h2{
+    font-size:28px;
+}
+
+.impact-intro p{
+    font-size:16px;
+    line-height:1.6;
+}
+
+.impact-grid{
+    grid-template-columns:1fr;
+    gap:12px;
+}
+
+.impact-item{
+    padding:20px;
+}
+
+.impact-item h3{
+    font-size:19px;
+}
+
+.impact-item p{
+    font-size:15px;
+} 
 }
