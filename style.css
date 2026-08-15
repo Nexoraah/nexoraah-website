@@ -979,7 +979,7 @@ background:linear-gradient(
 .footer-bottom{
     margin-top:50px;
     padding-top:20px;
-    border-top:1px solid rgba(45,220,220,.08);
+    border-top:1px solid rgba(32,214,208,.08);
 }
 
 .footer-bottom p{
@@ -1031,7 +1031,7 @@ background:linear-gradient(
 
 .impact-item{
     padding:24px;
-    border:1px solid rgba(45,220,220,.12);
+    border:1px solid rgba(32,214,208,.12);
     background:rgba(255,255,255,.02);
 }
 
