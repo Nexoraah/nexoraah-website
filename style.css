@@ -357,7 +357,7 @@ background:linear-gradient(
 
 .btn-primary:hover{
     transform:translateY(-3px);
-    box-shadow:0 12px 35px rgba(20,215,215,.2);
+    box-shadow:0 12px 35px rgba(32,214,208,.2);
 }
 
 .btn-secondary{
