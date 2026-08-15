@@ -1153,37 +1153,43 @@ gap:80px;
 
 .contact-content p{
     font-size:18px;
-  .impact-section{
-    padding:70px 0;
+   
+.impact-section{
+    padding:55px 0;
 }
 
 .impact-intro{
-    margin-bottom:32px;
+    margin-bottom:25px;
 }
 
 .impact-intro h2{
-    font-size:28px;
+    font-size:25px;
+    line-height:1.2;
+    margin-bottom:16px;
 }
 
 .impact-intro p{
-    font-size:16px;
-    line-height:1.6;
+    font-size:15px;
+    line-height:1.5;
 }
 
 .impact-grid{
+    display:grid;
     grid-template-columns:1fr;
-    gap:12px;
+    gap:10px;
 }
 
 .impact-item{
-    padding:20px;
+    padding:16px;
 }
 
 .impact-item h3{
-    font-size:19px;
+    font-size:18px;
+    margin-bottom:8px;
 }
 
 .impact-item p{
     font-size:15px;
-} 
+    line-height:1.5;
+}
 }
