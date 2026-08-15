@@ -945,3 +945,37 @@ gap:80px;
         font-size:17px;
        }
 }
+
+.industries-section{
+    padding:70px 0;
+}
+
+.industries-intro{
+    margin-bottom:40px;
+}
+
+.industries-intro h2{
+    font-size:38px;
+}
+
+.industries-intro p{
+    font-size:18px;
+}
+
+.industries-grid{
+    grid-template-columns:1fr;
+    gap:18px;
+}
+
+.industry-item{
+    padding:24px;
+}
+
+.industry-item h3{
+    font-size:22px;
+}
+
+.industry-item p{
+    font-size:17px;
+}
+}
