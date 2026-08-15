@@ -820,7 +820,7 @@ background:linear-gradient(
 .capability-card{
     padding:32px;
     border:1px solid rgba(45,220,220,.16);
-    background:rgba(255,255,255,.02);
+    background:rgba(32,214,208,.16);
 }
 
 .capability-number{
@@ -850,7 +850,7 @@ background:linear-gradient(
 
 .industries-section{
     padding:100px 0;
-    border-top:1px solid rgba(45,220,220,.12);
+    border-top:1px solid rgba(32,214,208,.12);
 }
 
 .industries-intro{
@@ -888,7 +888,7 @@ background:linear-gradient(
 
 .industry-item{
     padding:30px;
-    border:1px solid rgba(45,220,220,.16);
+    border:1px solid rgba(32,214,208,.16);
     background:rgba(255,255,255,.02);
 }
 
@@ -907,7 +907,7 @@ background:linear-gradient(
 }
 .contact-section{
     padding:120px 0;
-    border-top:1px solid rgba(45,220,220,.12);
+    border-top:1px solid rgba(32,214,208,.12);
 }
 
 .contact-content{
@@ -945,7 +945,7 @@ background:linear-gradient(
 
 .site-footer{
     padding:70px 0 30px;
-    border-top:1px solid rgba(45,220,220,.12);
+    border-top:1px solid rgba(32,214,208,.12);
 }
 
 .footer-content{
