@@ -905,6 +905,40 @@ gap:80px;
     color:#b8c2d6;
     margin:0;
 }
+.contact-section{
+    padding:120px 0;
+    border-top:1px solid rgba(45,220,220,.12);
+}
+
+.contact-content{
+    max-width:900px;
+    margin:0 auto;
+}
+
+.contact-content h2{
+    font-size:48px;
+    line-height:1.15;
+    margin:0 0 28px;
+    color:#ffffff;
+}
+
+.contact-content p{
+    font-size:20px;
+    line-height:1.7;
+    color:#b8c2d6;
+    max-width:700px;
+    margin:0 0 35px;
+}
+
+.contact-cta{
+    display:inline-block;
+    padding:16px 28px;
+    border:1px solid #20D6D0;
+    border-radius:4px;
+    color:#ffffff;
+    text-decoration:none;
+    font-size:16px;
+}
 
 @media(max-width:480px){
 
@@ -978,4 +1012,15 @@ gap:80px;
 .industry-item p{
     font-size:17px;
 }
+}
+.contact-section{
+    padding:70px 0;
+}
+
+.contact-content h2{
+    font-size:38px;
+}
+
+.contact-content p{
+    font-size:18px;
 }
