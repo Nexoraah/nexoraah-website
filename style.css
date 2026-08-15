@@ -368,7 +368,7 @@ background:linear-gradient(
 
 .btn-secondary:hover{
     transform:translateY(-3px);
-    background:rgba(20,215,215,.08);
+    background:rgba(32,214,208,.08);
     border-color:#63D65A;
 }
 
