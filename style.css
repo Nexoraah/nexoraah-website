@@ -1192,4 +1192,15 @@ gap:80px;
     font-size:15px;
     line-height:1.5;
 }
-}
+@media (max-width:800px){
+
+    .impact-grid{
+        grid-template-columns:1fr !important;
+        gap:14px;
+    }
+
+    .impact-item{
+        padding:16px;
+    }
+
+}}
