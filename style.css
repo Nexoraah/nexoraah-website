@@ -1204,3 +1204,89 @@ background:linear-gradient(
     }
 
 }}
+/* =========================================
+   MULTI-PAGE SITE STYLES
+   ========================================= */
+
+.page-hero {
+  padding: 150px 0 80px;
+  background: #071b2b;
+  text-align: center;
+}
+
+.page-hero .eyebrow {
+  margin-bottom: 18px;
+}
+
+.page-hero h1 {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.content-section {
+  padding: 90px 0;
+}
+
+.section-heading {
+  max-width: 850px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.single-content {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.single-content p {
+  margin-bottom: 22px;
+  line-height: 1.8;
+}
+
+.alternate-section {
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.contact-cta {
+  padding: 90px 0;
+  text-align: center;
+  background: #071b2b;
+}
+
+.contact-cta h2 {
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+.contact-cta p {
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+.primary-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .page-hero {
+    padding: 120px 20px 60px;
+  }
+
+  .content-section {
+    padding: 65px 20px;
+  }
+
+  .contact-cta {
+    padding: 65px 20px;
+  }
+
+  .section-heading {
+    margin-bottom: 30px;
+  }
+}
