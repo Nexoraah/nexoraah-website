@@ -1534,3 +1534,58 @@ footer {
         justify-content: space-between;
     }
 }
+/* =========================================
+   INTEGRATED PAGE HEADER
+   ========================================= */
+
+body:has(.page-hero) .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: transparent;
+    border-bottom: 1px solid rgba(30, 210, 210, 0.22);
+}
+
+body:has(.page-hero) .navbar .nav-wrapper {
+    min-height: 102px;
+}
+
+body:has(.page-hero) .page-hero {
+    margin-top: 0;
+    padding-top: 175px;
+    min-height: 560px;
+    border-bottom: 0;
+}
+
+body:has(.page-hero) .page-hero::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 180px;
+    background: linear-gradient(
+        to bottom,
+        transparent,
+        #020816
+    );
+    pointer-events: none;
+}
+
+body:has(.page-hero) .page-hero .container {
+    position: relative;
+    z-index: 2;
+}
+
+@media (max-width: 800px) {
+    body:has(.page-hero) .navbar .nav-wrapper {
+        min-height: 82px;
+    }
+
+    body:has(.page-hero) .page-hero {
+        padding-top: 125px;
+        min-height: 480px;
+    }
+}
